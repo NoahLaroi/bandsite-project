@@ -313,6 +313,24 @@ p {
     height: 400px;
     width: 100%;
   }
+
+  .main__text__contaier {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+  }
+
+  .paragraph__container__top,
+.paragraph__container__bottom {
+    width: 50%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .photo__gallery {
