@@ -107,6 +107,17 @@ p {
   padding: 16px 0;
 }
 
+.quote {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+.quote--author {
+  margin-top: 0;
+  padding: 0 36px;
+  font-weight: 13px;
+}
+
 .body__section {
   padding: 16px;
   display: -webkit-box;
@@ -226,7 +237,7 @@ p {
   }
 
   .header__nav {
-    width: 45%;
+    width: 250px;
   }
 
   .header__nav__link {
@@ -275,6 +286,8 @@ p {
 
   .quote {
     font-size: 24px;
+    font-weight: 600;
+    padding: 0 36px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -294,7 +307,7 @@ p {
   }
 
   .body__section {
-    padding: 32px;
+    padding: 36px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -306,38 +319,36 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .body__section__title {
-    width: 100%;
-  }
   .body__section__img {
     height: 400px;
     width: 100%;
+    padding: 36px;
+    margin: 0 auto;
   }
 
-  .main__text__contaier {
+  .main__text__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-columns: 2;
-       -moz-columns: 2;
-            columns: 2;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 55%;
+    padding: 0 36px;
   }
 
-  .paragraph__container__top,
-.paragraph__container__bottom {
-    width: 50%;
+  .paragraph__container--top,
+.paragraph__container--bottom {
+    font-size: 14px;
+    padding-right: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .photo__gallery {
-    padding: 32px;
+    padding: 36px;
   }
   .photo__gallery .photo__gallery {
-    padding: 32px;
+    padding: 36px;
   }
   .photo__gallery .photo__gallery__picture__container {
     display: -webkit-box;
@@ -355,8 +366,8 @@ p {
             align-items: center;
   }
   .photo__gallery .photo__gallery__picture {
-    height: 200px;
-    width: 300px;
+    height: 50%;
+    width: 25%;
     margin: 16px;
   }
 }
@@ -369,12 +380,16 @@ p {
        -moz-columns: 3;
             columns: 3;
   }
-  .footer__section__title {
+  .footer__section__divider {
+    display: block;
+    margin: 16px;
+  }
+  .footer__section__divider__title {
     font-size: 24px;
     font-weight: 300;
     padding: 16px;
   }
-  .footer__section__icon__container {
+  .footer__section__divider__icon__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -388,22 +403,22 @@ p {
     width: 120px;
     padding: 16px;
   }
-  .footer__section__text__container {
+  .footer__section__divider__text__container {
     padding: 0 16px;
   }
-  .footer__section__text__container p {
+  .footer__section__divider__text__container p {
     margin: 0;
     padding: 16px 0;
     font-size: 13px;
   }
-  .footer__section__icon__container {
+  .footer__section__divider__icon__container {
     padding: 0 16px;
   }
-  .footer__section__icon {
+  .footer__section__divider__icon {
     height: 25px;
     width: 25px;
   }
-  .footer__section__logo {
+  .footer__section__divider__logo {
     font-weight: 200;
     font-size: 24px;
     padding: 64px 0 0 0;
