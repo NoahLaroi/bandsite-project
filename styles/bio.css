@@ -22,6 +22,10 @@ p {
   line-height: 18px;
 }
 
+.alt__footer {
+  display: none;
+}
+
 .header {
   background-color: #323232;
   color: #ffffff;
@@ -399,23 +403,47 @@ p {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .footer__section {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .alt__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     background-color: #323232;
     color: #ffffff;
-    margin: 0;
-    -webkit-columns: 3;
-       -moz-columns: 3;
-            columns: 3;
   }
-  .footer__section__divider {
-    display: block;
-    margin: 16px;
-  }
-  .footer__section__divider__title {
-    font-size: 24px;
-    font-weight: 300;
+  .alt__footer__icon__container {
+    width: 80px;
+    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 16px;
+    margin: 0;
   }
-  .footer__section__divider__icon__container {
+  .alt__footer__icon__container .__icon {
+    height: 20px;
+    width: 20px;
+    padding: 0 8px;
+  }
+  .alt__footer__title {
+    width: 160px;
+    display: inline;
+  }
+  .alt__footer__logo {
+    display: inline;
+    width: 25%;
+  }
+  .alt__footer__text__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -426,28 +454,28 @@ p {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 120px;
-    padding: 16px;
   }
-  .footer__section__divider__text__container {
-    padding: 0 16px;
+  .alt__footer__text__container .divider {
+    width: 25%;
   }
-  .footer__section__divider__text__container p {
-    margin: 0;
-    padding: 16px 0;
-    font-size: 13px;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .alt__footer__top__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
   }
-  .footer__section__divider__icon__container {
-    padding: 0 16px;
-  }
-  .footer__section__divider__icon {
-    height: 25px;
-    width: 25px;
-  }
-  .footer__section__divider__logo {
-    font-weight: 200;
-    font-size: 24px;
-    padding: 64px 0 0 0;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .alt__logo__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (min-width: 1280px) {
@@ -639,54 +667,6 @@ p {
 }
 @media (min-width: 1280px) {
   .footer__section {
-    background-color: #323232;
-    color: #ffffff;
-    margin: 0;
-    -webkit-columns: 3;
-       -moz-columns: 3;
-            columns: 3;
-  }
-  .footer__section__divider {
-    display: block;
-    margin: 16px;
-  }
-  .footer__section__divider__title {
-    font-size: 24px;
-    font-weight: 300;
-    padding: 16px;
-  }
-  .footer__section__divider__icon__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 120px;
-    padding: 16px;
-  }
-  .footer__section__divider__text__container {
-    padding: 0 16px;
-  }
-  .footer__section__divider__text__container p {
-    margin: 0;
-    padding: 16px 0;
-    font-size: 13px;
-  }
-  .footer__section__divider__icon__container {
-    padding: 0 16px;
-  }
-  .footer__section__divider__icon {
-    height: 25px;
-    width: 25px;
-  }
-  .footer__section__divider__logo {
-    font-weight: 200;
-    font-size: 24px;
-    padding: 64px 0 0 0;
+    display: none;
   }
 }/*# sourceMappingURL=bio.css.map */
