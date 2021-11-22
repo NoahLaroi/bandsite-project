@@ -104,6 +104,10 @@
                                 // text-decoration-thickness: 2px;
                             }
                             
+                            #active:hover {
+                                color: $alabaster;
+                            }
+                            
                             #inactive {
                                 color: $silver;
                             }
@@ -227,6 +231,13 @@
                                     font-weight: 200;
                                     font-size: 24px;
                                     padding: 64px 0 0 0;
+                                }
+                            }
+                            
+                            .footer__section__end__container {
+                                padding-left: 16px;
+                                p {
+                                    margin: 0;
                                 }
                             }
                             
@@ -405,33 +416,40 @@
                                     background-color: $bandsite-black;
                                     color: $white;
                                     &__icon__container {
-                                        width: 80px;
-                                        display: inline;
-                                        display: flex;
-                                        justify-content: space-evenly;
+                                        width: 30%;
+                                        display: inline-block;
                                         padding: 16px;
                                         margin: 0;
                                         .__icon {
-                                            height: 20px;
-                                            width: 20px;
+                                            height: 30px;
+                                            width: 30px;
                                             padding: 0 8px;
                                         }
                                     }
                                     &__title {
-                                        width: 160px;
+                                        width: 250px;
                                         display: inline;
+                                        padding-left: 112px;
+                                        font-weight: 600;
+                                        font-size: 36px;
                                     }
                                     &__logo {
                                         display: inline;
-                                        width: 25%;
+                                        font-weight: 200;
+                                        padding-left: 56px;
                                     }
                                     &__text__container {
                                         display: flex;
                                         flex-flow: row wrap;
                                         justify-content: space-evenly;
+                                        width: 100%;
+                                        padding-left: 72px;
                                         .divider {
                                             width: 25%;
                                         }
+                                    }
+                                    &__end__container {
+                                        padding-left: 160px;
                                     }
                                 }
                             }
@@ -439,13 +457,17 @@
                             @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
                                 .alt__footer__top__container {
                                     display: flex;
+                                    justify-content: space-between;
                                     width: 100%;
+                                    .top__divider {
+                                        width: 75%;
+                                    }
                                 }
                             }
                             
                             @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
                                 .alt__logo__container {
-                                    width: 100%;
+                                    width: 25%;
                                     display: flex;
                                     justify-content: space-between;
                                 }
@@ -526,7 +548,7 @@
                             
                             @media (min-width: $desktop-lower) {
                                 .photo__gallery {
-                                    padding: 36px;
+                                    padding: 36px 80px;
                                     &__picture__container {
                                         display: flex;
                                         flex-flow: row wrap;
@@ -611,53 +633,74 @@
                                 }
                             }
                             
-                            // @media (min-width: $desktop-lower) {
-                            //     .footer__section {
-                            //         background-color: $bandsite-black;
-                            //         color: $white;
-                            //         margin: 0;
-                            //         columns: 3;
-                            //         &__divider {
-                            //             display: block;
-                            //             margin: 16px;
-                            //             &__title {
-                            //                 font-size: 24px;
-                            //                 font-weight: 300;
-                            //                 width: 50%;
-                            //                 padding: 16px;
-                            //             }
-                            //             &__icon__container {
-                            //                 display: flex;
-                            //                 flex-flow: row wrap;
-                            //                 justify-content: space-evenly;
-                            //                 width: 120px;
-                            //                 padding: 16px;
-                            //             }
-                            //             &__text__container {
-                            //                 padding: 0 16px;
-                            //             }
-                            //             &__text__container p {
-                            //                 margin: 0;
-                            //                 padding: 16px 0;
-                            //                 font-size: 13px;
-                            //             }
-                            //             &__icon__container {
-                            //                 padding: 0 16px;
-                            //             }
-                            //             &__icon {
-                            //                 height: 25px;
-                            //                 width: 25px;
-                            //             }
-                            //             &__logo {
-                            //                 font-weight: 200;
-                            //                 font-size: 24px;
-                            //                 padding: 64px 0 0 0;
-                            //             }
-                            //         }
-                            //     }
-                            // }
+                            //Desktop Footer Styles
                             @media (min-width: $desktop-lower) {
                                 .footer__section {
                                     display: none;
+                                }
+                            }
+                            
+                            @media (min-width: $desktop-lower) {
+                                .alt__footer {
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    background-color: $bandsite-black;
+                                    color: $white;
+                                    &__icon__container {
+                                        width: 45%;
+                                        display: inline-block;
+                                        padding: 16px;
+                                        margin: 0;
+                                        .__icon {
+                                            height: 30px;
+                                            width: 30px;
+                                            padding: 0 8px;
+                                        }
+                                    }
+                                    &__title {
+                                        width: 250px;
+                                        display: inline;
+                                        padding-left: 100px;
+                                        font-weight: 600;
+                                        font-size: 36px;
+                                    }
+                                    &__logo {
+                                        display: inline;
+                                        font-weight: 200;
+                                        width: 25%;
+                                    }
+                                    &__text__container {
+                                        display: flex;
+                                        flex-flow: row wrap;
+                                        justify-content: space-evenly;
+                                        width: 100%;
+                                        padding-left: 24px;
+                                        .divider {
+                                            width: 25%;
+                                        }
+                                    }
+                                    &__end__container {
+                                        padding-left: 96px;
+                                    }
+                                }
+                            }
+                            
+                            @media (min-width: $desktop-lower) {
+                                .alt__footer__top__container {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    .top__divider {
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            
+                            @media (min-width: $desktop-lower) {
+                                .alt__logo__container {
+                                    padding-left: 80px;
+                                    width: 18.5%;
+                                    display: flex;
+                                    justify-content: space-between;
                                 }
                             }

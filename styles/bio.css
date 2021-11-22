@@ -78,6 +78,10 @@ p {
   border-left: 0;
 }
 
+#active:hover {
+  color: #fafafa;
+}
+
 #inactive {
   color: #afafaf;
 }
@@ -219,6 +223,13 @@ p {
   font-weight: 200;
   font-size: 24px;
   padding: 64px 0 0 0;
+}
+
+.footer__section__end__container {
+  padding-left: 16px;
+}
+.footer__section__end__container p {
+  margin: 0;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -419,29 +430,27 @@ p {
     color: #ffffff;
   }
   .alt__footer__icon__container {
-    width: 80px;
-    display: inline;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    width: 30%;
+    display: inline-block;
     padding: 16px;
     margin: 0;
   }
   .alt__footer__icon__container .__icon {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     padding: 0 8px;
   }
   .alt__footer__title {
-    width: 160px;
+    width: 250px;
     display: inline;
+    padding-left: 112px;
+    font-weight: 600;
+    font-size: 36px;
   }
   .alt__footer__logo {
     display: inline;
-    width: 25%;
+    font-weight: 200;
+    padding-left: 56px;
   }
   .alt__footer__text__container {
     display: -webkit-box;
@@ -454,9 +463,14 @@ p {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    width: 100%;
+    padding-left: 72px;
   }
   .alt__footer__text__container .divider {
     width: 25%;
+  }
+  .alt__footer__end__container {
+    padding-left: 160px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -464,12 +478,18 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
+  }
+  .alt__footer__top__container .top__divider {
+    width: 75%;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .alt__logo__container {
-    width: 100%;
+    width: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -564,7 +584,7 @@ p {
 }
 @media (min-width: 1280px) {
   .photo__gallery {
-    padding: 36px;
+    padding: 36px 80px;
   }
   .photo__gallery__picture__container {
     display: -webkit-box;
@@ -668,5 +688,87 @@ p {
 @media (min-width: 1280px) {
   .footer__section {
     display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .alt__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    background-color: #323232;
+    color: #ffffff;
+  }
+  .alt__footer__icon__container {
+    width: 45%;
+    display: inline-block;
+    padding: 16px;
+    margin: 0;
+  }
+  .alt__footer__icon__container .__icon {
+    height: 30px;
+    width: 30px;
+    padding: 0 8px;
+  }
+  .alt__footer__title {
+    width: 250px;
+    display: inline;
+    padding-left: 100px;
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .alt__footer__logo {
+    display: inline;
+    font-weight: 200;
+    width: 25%;
+  }
+  .alt__footer__text__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    padding-left: 24px;
+  }
+  .alt__footer__text__container .divider {
+    width: 25%;
+  }
+  .alt__footer__end__container {
+    padding-left: 96px;
+  }
+}
+@media (min-width: 1280px) {
+  .alt__footer__top__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .alt__footer__top__container .top__divider {
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .alt__logo__container {
+    padding-left: 80px;
+    width: 18.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }/*# sourceMappingURL=bio.css.map */
