@@ -241,6 +241,69 @@ hr {
   margin: 0;
 }
 
+.commentSection {
+  margin-left: 16px;
+}
+.commentSection h2 {
+  margin-left: 16px;
+}
+
+.textInput {
+  background-color: #fafafa;
+  border-color: silver;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.profilePicture {
+  background-image: url(../assets/images/Mohan-muruge.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.commentHeadPair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 16px;
+}
+
+#userform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#userInput {
+  margin-left: 16px;
+  padding: 8px;
+}
+
+#commentInput {
+  padding-bottom: 100px;
+  border-radius: 5px;
+  margin-left: 16px;
+}
+
+label {
+  display: inline-block;
+  padding-left: 16px;
+  margin: 8px 0;
+  color: #afafaf;
+  font-size: 10px;
+  width: 50%;
+}
+
+#nameLabel {
+  padding-left: 64px;
+}
+
 .inputComment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,10 +312,29 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+}
+
+.commentBottomPair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 48px;
+}
+
+#submitButton {
+  margin-left: 16px;
+  color: #ffffff;
+  background-color: #323232;
+  border-radius: 5px;
+  padding: 8px;
   width: 50%;
 }
 
-.postedComments {
+#postedComments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,13 +343,13 @@ hr {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   margin: 16px 0;
-  padding-left: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 75%;
+  padding: 0 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: justify;
+  width: 100%;
 }
-.postedComments .name {
+#postedComments .name {
   margin: 0;
   display: inline-block;
 }
@@ -280,14 +362,17 @@ hr {
   display: inline-block;
 }
 
-.connor {
+.commentBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-size: 14px;
+  font-weight: 400;
+  width: 75%;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {

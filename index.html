@@ -77,17 +77,21 @@
     <h2>Join The Conversation</h2>
     <div class="inputComment">
         <form id="userForm">
-            <div class="profilePicture"> </div>
-            <label>NAME</label>
-            <input type="text" name="user_name" class="textInput" id="userInput" placeholder="My Name Is...">
-            <label>COMMENT</label>
-            <textarea name="comment_submission" class="textInput" id="commentInput" placeholder="Leave a Comment">
-           </textarea>
-            <button type="submit" id="submitButton" onclick="document.getElementsByClassName('textInput').value = ''">REPLY</button>
+            <label id="nameLabel">NAME</label>
+            <div class="commentHeadPair">
+                <div class="profilePicture"> </div>
+                <input type="text" name="user_name" class="textInput" id="userInput" placeholder="My Name Is...">
+            </div>
+            <div class="commentBottomPair">
+                <label id="commentLabel">COMMENT</label>
+                <textarea name="comment_submission" class="textInput" id="commentInput" type="text" placeholder="Leave a Comment">
+            </textarea>
+            </div>
+            <button type="submit" id="submitButton" onclick="document.getElementsByClassName('textInput').value = ''">COMMENT</button>
         </form>
     </div>
     <section id="postedComments">
-        <div class="connor">
+        <div class="commentBox">
             <div class="blankPic"></div>
             <p class="name">Connor Walton</p>
             <p class="comment">
@@ -95,7 +99,7 @@
             </p>
         </div>
         <hr>
-        <div class="emilie">
+        <div class="commentBox">
             <div class="blankPic"></div>
             <p class="name">Emilie Beach</p>
             <p class="comment">
@@ -103,7 +107,7 @@
             </p>
         </div>
         <hr>
-        <div class="miles">
+        <div class="commentBox">
             <div class="blankPic"></div>
             <p class="name">Miles Acosta</p>
             <p class="comment">

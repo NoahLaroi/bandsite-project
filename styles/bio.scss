@@ -247,19 +247,93 @@
                             }
                             
                             //Comment Section 
-                            .inputComment {
+                            .commentSection {
+                                margin-left: 16px;
+                                h2 {
+                                    margin-left: 16px;
+                                }
+                            }
+                            
+                            .textInput {
+                                background-color: $alabaster;
+                                border-color: silver;
+                                border-radius: 5px;
+                                width: 200px;
+                            }
+                            
+                            .profilePicture {
+                                background-image: url(../assets/images/Mohan-muruge.jpg);
+                                background-position: center;
+                                background-size: cover;
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 50%;
+                                display: inline-block;
+                            }
+                            
+                            .commentHeadPair {
                                 display: flex;
-                                flex-flow: column wrap;
+                                align-content: center;
+                                margin-left: 16px;
+                            }
+                            
+                            #userform {
+                                display: flex;
+                            }
+                            
+                            #userInput {
+                                margin-left: 16px;
+                                padding: 8px;
+                            }
+                            
+                            #commentInput {
+                                padding-bottom: 100px;
+                                border-radius: 5px;
+                                margin-left: 16px;
+                            }
+                            
+                            label {
+                                display: inline-block;
+                                padding-left: 16px;
+                                margin: 8px 0;
+                                color: $silver;
+                                font-size: 10px;
                                 width: 50%;
                             }
                             
-                            .postedComments {
+                            #nameLabel {
+                                padding-left: 64px;
+                            }
+                            
+                            .inputComment {
+                                display: flex;
+                                flex-flow: column wrap;
+                            }
+                            
+                            .commentBottomPair {
+                                display: flex;
+                                flex-direction: column;
+                                padding-left: 48px;
+                            }
+                            
+                            #submitButton {
+                                margin-left: 16px;
+                                color: $white;
+                                background-color: $bandsite-black;
+                                border-radius: 5px;
+                                padding: 8px;
+                                width: 50%;
+                            }
+                            
+                            //Posted Comments Section Styles
+                            #postedComments {
                                 display: flex;
                                 flex-flow: column wrap;
                                 margin: 16px 0;
-                                padding-left: 16px;
-                                justify-content: center;
-                                width: 75%;
+                                padding: 0 16px;
+                                align-content: center;
+                                text-align: justify;
+                                width: 100%;
                                 .name {
                                     margin: 0;
                                     display: inline-block;
@@ -274,9 +348,12 @@
                                 display: inline-block;
                             }
                             
-                            .connor {
+                            .commentBox {
                                 display: flex;
-                                flex-flow: row;
+                                flex-flow: row wrap;
+                                font-size: 14px;
+                                font-weight: 400;
+                                width: 75%;
                             }
                             
                             //Tablet Styles
