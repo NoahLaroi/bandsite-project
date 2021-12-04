@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/bio.css">
+    <script src="scripts/index-page.js"></script>
     <title>BandSite</title>
 </head>
 
@@ -20,7 +21,7 @@
             <a href="index.html" class="header__nav_link">
                 <h3 class="header__nav__txt" id="active">Biography</h3>
             </a>
-            <a href="" class="header__nav_link">
+            <a href="./pages/shows.html" class="header__nav_link">
                 <h3 class="header__nav__txt" id="inactive">Shows</h3>
             </a>
         </nav>
@@ -69,8 +70,51 @@
             <img class="photo__gallery__picture " src="assets/images/Photo-gallery-9.jpg ">
         </div>
     </section>
+
 </body>
-<footer class="footer__section ">
+<!--Comment Section: I am using camel case because this is where JS is being applied-->
+<section class="commentSection">
+    <h2>Join The Conversation</h2>
+    <div class="inputComment">
+        <form id="userForm">
+            <div class="profilePicture"> </div>
+            <label>NAME</label>
+            <input type="text" name="user_name" class="textInput" id="userInput" placeholder="My Name Is...">
+            <label>COMMENT</label>
+            <textarea name="comment_submission" class="textInput" id="commentInput" placeholder="Leave a Comment">
+           </textarea>
+            <button type="submit" id="submitButton" onclick="document.getElementsByClassName('textInput').value = ''">REPLY</button>
+        </form>
+    </div>
+    <section id="postedComments">
+        <div class="connor">
+            <div class="blankPic"></div>
+            <p class="name">Connor Walton</p>
+            <p class="comment">
+                This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.
+            </p>
+        </div>
+        <hr>
+        <div class="emilie">
+            <div class="blankPic"></div>
+            <p class="name">Emilie Beach</p>
+            <p class="comment">
+                I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.
+            </p>
+        </div>
+        <hr>
+        <div class="miles">
+            <div class="blankPic"></div>
+            <p class="name">Miles Acosta</p>
+            <p class="comment">
+                I can't stop listening. Every time I hear one of their songs the vocals it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can t get enough.
+            </p>
+        </div>
+    </section>
+    <hr>
+</section>
+<!--Footer Section-->
+<footer class="footer__section">
     <div class="footer__top__container ">
         <h2 class="footer__section__title ">Get in Touch</h2>
         <div class="footer__section__icon__container ">

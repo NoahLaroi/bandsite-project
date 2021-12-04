@@ -1,0 +1,621 @@
+    // Primary Colors
+    $bandsite-black: #323232;
+    $silver: #afafaf;
+    $white: #ffffff;
+    //Secondary Colors
+    $bandsite-darkblack: #000000;
+    $mercury: #e1e1e1;
+    $alabaster: hsl(0, 0%, 98%);
+    //Screen Parameters
+    //*Tablet
+    $tablet-lower: 768px;
+    $tablet-higher: 1279px;
+    @mixin lgr-text {
+        font-size: 14px;
+        align-items: center;
+    }
+    
+    @mixin button-txt {
+        font-size: 14x;
+    }
+    
+    #commentInput {
+        resize: none;
+        height: 100px;
+        width: 250px;
+    }
+    
+    //*Desktop
+    $desktop-lower: 1280px;
+    //General Styles
+    @font-face {
+        font-family: Avenir Next;
+        src: url(../../../Documents/avenir-next.zip);
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Avenir Next;
+        color: $bandsite-black;
+    }
+    
+    .shows p,
+    .shows h2 {
+        font-family: Avenir Next;
+        color: $bandsite-black;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        padding: 16px 0;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    .alt__footer {
+        display: none;
+    }
+    
+    .alt__shows {
+        display: none;
+    }
+    
+    .shows .date,
+    .shows .venue,
+    .shows .location {
+        color: $silver;
+        font-size: 10px;
+    }
+    
+    hr {
+        border: 0;
+        clear: both;
+        display: block;
+        width: 96%;
+        background-color: $silver;
+        height: 1px;
+    }
+    
+    .alt__show__container:hover {
+        background-color: $alabaster;
+    }
+    
+    .alt__show__container:active {
+        background-color: $mercury;
+    }
+    
+    //Practice with Bruna
+    // @mixin bigScreenStyles {
+    //     background-color: green;
+    // }
+    //HeaderStyles
+    .header {
+        background-color: $bandsite-black;
+        color: $white;
+        margin: 0;
+        height: 70px;
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    
+    .header__title__box {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .header__title {
+        font-weight: 200;
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    
+    .header__nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        text-align: center;
+        &__txt {
+            font-weight: 300;
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 13px;
+            width: 50vw;
+        }
+    }
+    
+    // .header__nav__link {
+    // border-style: solid;
+    // border-color: $white;
+    // border-top: 0;
+    // border-right: 0;
+    // border-bottom: 10px;
+    // border-left: 0;
+    // }
+    #active {
+        border-style: solid;
+        border-color: $white;
+        border-top: 2px;
+        border-right: 0;
+        border-left: 0;
+        // text-decoration: underline;
+        // text-decoration-color: $white;
+        // text-decoration-thickness: 2px;
+    }
+    
+    #active:hover {
+        color: $alabaster;
+    }
+    
+    #inactive {
+        color: $silver;
+    }
+    
+    //Hero Styles
+    .hero {
+        background-image: url(../assets/images/hero-shows.jpg);
+        filter: $bandsite-black;
+        background-size: cover;
+        background-position: center;
+        color: $white;
+        height: 400px;
+        &__text {
+            position: relative;
+            padding: 32px 0 0 16px;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            z-index: 1;
+        }
+        &__presentation {
+            position: relative;
+            font-size: 24px;
+            padding-left: 16px;
+            z-index: 1;
+            font-weight: 600;
+        }
+        &__song__container {
+            width: 75%;
+            padding-left: 16px;
+            iframe {
+                width: 100%;
+                height: 75%;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        &__overlay {
+            background-color: $bandsite-black;
+            width: 100%;
+            height: 100%;
+            opacity: 50%;
+            position: relative;
+            bottom: 71.7%;
+        }
+    }
+    
+    .shows {
+        padding-left: 16px;
+        padding-right: 16px;
+        &__heading {
+            font-weight: 600;
+            padding-top: 16px;
+        }
+    }
+    
+    .tickets__button {
+        color: $white;
+        background-color: $bandsite-black;
+        width: 70%;
+        border: solid;
+        border-color: $bandsite-black;
+        border-radius: 5px;
+        position: relative;
+        left: 15%;
+    }
+    
+    .tickets__button:hover {
+        background-color: $bandsite-darkblack;
+        border-color: $bandsite-darkblack;
+    }
+    
+    //Footer Styles
+    .footer__section {
+        background-color: $bandsite-black;
+        color: $white;
+        margin-top: 8px;
+        &__title {
+            font-size: 24px;
+            font-weight: 300;
+            padding: 16px;
+        }
+        &__icon__container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            width: 120px;
+            padding: 16px;
+        }
+        &__text__container {
+            padding: 0 16px;
+        }
+        &__text__container p {
+            margin: 0;
+            padding: 16px 0;
+            font-size: 13px;
+        }
+        &__icon__container {
+            padding: 0 16px;
+        }
+        &__icon {
+            height: 25px;
+            width: 25px;
+        }
+        &__logo {
+            font-weight: 200;
+            font-size: 24px;
+            padding: 64px 0 0 0;
+        }
+    }
+    
+    .footer__section__end__container {
+        padding-left: 16px;
+        p {
+            margin: 0;
+        }
+    }
+    
+    //Tablet Styles
+    //Tablet Header Styles
+    @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-flow: row wrap;
+            height: 15%;
+        }
+        .header__title__box {
+            padding-left: 16px;
+            margin-right: 20px;
+        }
+        .header__title {
+            font-weight: 200;
+            font-size: 24px;
+            margin-left: 16px;
+            padding: 16px 0;
+        }
+        .header__nav {
+            width: 250px;
+        }
+        .header__nav__link {
+            padding: 20px 16px 18px 20px;
+            width: 60px;
+        }
+        .header__nav__txt {
+            font-size: 14px;
+            width: 120px;
+            padding: 16px 0;
+        }
+    }
+    
+    //Tablet Hero Styles 
+    @media (min-width:$tablet-lower) and (max-width: $tablet-higher) {
+        .hero {
+            height: 50vh;
+        }
+        .hero__presentation {
+            padding-left: 32px;
+            font-size: 60px;
+            width: 75%;
+        }
+        .hero__text {
+            padding-left: 32px;
+            font-size: 24px;
+        }
+        iframe {
+            padding-left: 16px;
+        }
+        .hero__overlay {
+            position: relative;
+            bottom: 88.5%;
+        }
+    }
+    
+    //Tablet Body Styles
+    @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+        .footer__section {
+            display: none;
+        }
+        .shows {
+            display: none;
+        }
+        .alt__shows {
+            display: block;
+            // flex-flow: row wrap;
+        }
+    }
+    
+    @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+        .tickets__button {
+            width: 15%;
+            height: 48px;
+            @include button-txt()
+        }
+    }
+    
+    .alt__shows__head {
+        padding-left: 32px;
+        display: flex;
+        justify-content: space-between;
+        width: 69%;
+        color: $silver;
+        @include lgr-text()
+    }
+    
+    .alt__shows__title {
+        padding-left: 32px
+    }
+    
+    @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+        .alt__show__container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            padding: 0 32px;
+            width: 92%;
+            height: 64px;
+            @include lgr-text()
+        }
+        p {
+            @include lgr-text()
+        }
+    }
+    
+    .main__container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .alt__date,
+    .alt__venue,
+    .alt__location {
+        width: 25%;
+    }
+    
+    .date__box,
+    .venue__box,
+    .location__box {
+        width: 18%;
+    }
+    
+    .date__box {
+        margin-right: 75px;
+    }
+    
+    .venue__box {
+        margin-right: 60px;
+    }
+    
+    //Tablet Footer Styles
+    //Initialize Alt Footer Styles
+    @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+        .alt__footer {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: $bandsite-black;
+            color: $white;
+            &__icon__container {
+                width: 30%;
+                display: inline-block;
+                padding: 16px;
+                margin: 0;
+                .__icon {
+                    height: 30px;
+                    width: 30px;
+                    padding: 0 8px;
+                }
+            }
+            &__title {
+                width: 250px;
+                display: inline;
+                padding-left: 32px;
+                font-weight: 600;
+                font-size: 36px;
+            }
+            &__logo {
+                display: inline;
+                font-weight: 200;
+                padding-left: 32px;
+            }
+            &__text__container {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                width: 100%;
+                padding-left: 32px;
+                .divider {
+                    width: 25%;
+                }
+            }
+            &__end__container {
+                padding-left: 32px;
+            }
+        }
+    }
+    
+    @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+        .alt__footer__top__container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .top__divider {
+                width: 75%;
+            }
+        }
+    }
+    
+    @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+        .alt__logo__container {
+            width: 25%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    //Desktop Styles
+    @media (min-width: $desktop-lower) {
+        .footer__section {
+            display: none;
+        }
+        .shows {
+            display: none;
+        }
+        .alt__shows {
+            display: flex;
+        }
+    }
+    
+    //Destop Header
+    @media (min-width: $desktop-lower) {
+        // @mixin bigScreenStyles () {
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-flow: row wrap;
+            height: 15%;
+        }
+        .header__title__box {
+            padding-left: 72px;
+            margin-right: 20px;
+        }
+        .header__title {
+            font-weight: 200;
+            font-size: 24px;
+            margin-left: 16px;
+            padding: 24px 0;
+        }
+        .header__nav {
+            width: 250px;
+        }
+        .header__nav__link {
+            padding: 20px 16px 18px 20px;
+            width: 60px;
+        }
+        .header__nav__txt {
+            font-size: 14px;
+            width: 120px;
+            padding: 24px 0;
+        }
+    }
+    
+    //Desktop Hero
+    //Desktop Body
+    @media (min-width: $desktop-lower) {
+        .alt__show__container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            width: 75%;
+            margin-left: 24px;
+        }
+        .alt__shows__head {
+            padding-left: 0;
+            display: flex;
+            align-content: center;
+            margin-top: 12px;
+            justify-content: space-betweem;
+            margin-left: 24px;
+        }
+        .tickets__button {
+            width: 15%;
+        }
+        .alt__shows__title {
+            width: 25%;
+            display: inline-block;
+            padding-left: 98px;
+        }
+        .date__box,
+        .venue__box,
+        .location__box {
+            width: 112px;
+        }
+    }
+    
+    //Desktop Footer Styles
+    @media (min-width: $desktop-lower) {
+        .alt__footer {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: $bandsite-black;
+            color: $white;
+            &__icon__container {
+                width: 45%;
+                display: inline-block;
+                padding: 16px;
+                margin: 0;
+                .__icon {
+                    height: 30px;
+                    width: 30px;
+                    padding: 0 8px;
+                }
+            }
+            &__title {
+                width: 250px;
+                display: inline;
+                padding-left: 100px;
+                font-weight: 600;
+                font-size: 36px;
+            }
+            &__logo {
+                display: inline;
+                font-weight: 200;
+                width: 25%;
+            }
+            &__text__container {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                width: 100%;
+                padding-left: 24px;
+                .divider {
+                    width: 25%;
+                }
+            }
+            &__end__container {
+                padding-left: 96px;
+            }
+        }
+    }
+    
+    @media (min-width: $desktop-lower) {
+        .alt__footer__top__container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .top__divider {
+                width: 50%;
+            }
+        }
+    }
+    
+    @media (min-width: $desktop-lower) {
+        .alt__logo__container {
+            padding-left: 80px;
+            width: 18.5%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }

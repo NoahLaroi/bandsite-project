@@ -99,6 +99,7 @@
                                 border-top: 2px;
                                 border-right: 0;
                                 border-left: 0;
+                                border-width: 50vw;
                                 // text-decoration: underline;
                                 // text-decoration-color: $white;
                                 // text-decoration-thickness: 2px;
@@ -242,6 +243,12 @@
                             }
                             
                             //Tablet Styles
+                            @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
+                                .footer__section {
+                                    display: none;
+                                }
+                            }
+                            
                             //Tablet Header w Nav
                             @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
                                 .header {
@@ -250,6 +257,7 @@
                                     align-items: center;
                                     flex-flow: row wrap;
                                     height: 15%;
+                                    width: 100%;
                                 }
                                 .header__title__box {
                                     padding-left: 16px;
@@ -280,6 +288,7 @@
                                 .hero {
                                     height: 500px;
                                     align-items: center;
+                                    width: 100%;
                                     &__text {
                                         position: relative;
                                         padding: 200px 0 0 16px;
@@ -402,12 +411,6 @@
                             }
                             
                             //Tablet Footer Styles
-                            @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
-                                .footer__section {
-                                    display: none;
-                                }
-                            }
-                            
                             //Initialize Alt Footer Styles
                             @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
                                 .alt__footer {

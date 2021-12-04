@@ -42,10 +42,6 @@
                                 display: none;
                             }
                             
-                            //Practice with Bruna
-                            // @mixin bigScreenStyles {
-                            //     background-color: green;
-                            // }
                             //HeaderStyles
                             .header {
                                 background-color: $bandsite-black;
@@ -56,6 +52,15 @@
                                     color: $white;
                                     text-decoration: none;
                                 }
+                            }
+                            
+                            hr {
+                                border: 0;
+                                clear: both;
+                                display: block;
+                                width: 96%;
+                                background-color: $silver;
+                                height: 1px;
                             }
                             
                             .header__title__box {
@@ -239,6 +244,39 @@
                                 p {
                                     margin: 0;
                                 }
+                            }
+                            
+                            //Comment Section 
+                            .inputComment {
+                                display: flex;
+                                flex-flow: column wrap;
+                                width: 50%;
+                            }
+                            
+                            .postedComments {
+                                display: flex;
+                                flex-flow: column wrap;
+                                margin: 16px 0;
+                                padding-left: 16px;
+                                justify-content: center;
+                                width: 75%;
+                                .name {
+                                    margin: 0;
+                                    display: inline-block;
+                                }
+                            }
+                            
+                            .blankPic {
+                                background-color: $silver;
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 50%;
+                                display: inline-block;
+                            }
+                            
+                            .connor {
+                                display: flex;
+                                flex-flow: row;
                             }
                             
                             //Tablet Styles
