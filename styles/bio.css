@@ -245,7 +245,7 @@ hr {
   margin-left: 16px;
 }
 .commentSection h2 {
-  margin-left: 16px;
+  margin-left: 0;
 }
 
 .textInput {
@@ -263,6 +263,7 @@ hr {
   width: 30px;
   border-radius: 50%;
   display: inline-block;
+  margin-right: 16px;
 }
 
 .commentHeadPair {
@@ -271,7 +272,6 @@ hr {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-left: 16px;
 }
 
 #userform {
@@ -281,14 +281,16 @@ hr {
 }
 
 #userInput {
-  margin-left: 16px;
   padding: 8px;
+  width: 67%;
 }
 
 #commentInput {
-  padding-bottom: 100px;
   border-radius: 5px;
-  margin-left: 16px;
+  width: 75%;
+  height: 100px;
+  margin-bottom: 16px;
+  margin-left: 32px;
 }
 
 label {
@@ -301,7 +303,11 @@ label {
 }
 
 #nameLabel {
-  padding-left: 64px;
+  padding-left: 48px;
+}
+
+#commentLabel {
+  padding-left: 32px;
 }
 
 .inputComment {
@@ -322,16 +328,16 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 48px;
+  padding-left: 16px;
 }
 
 #submitButton {
-  margin-left: 16px;
+  margin-left: 48px;
   color: #ffffff;
   background-color: #323232;
   border-radius: 5px;
   padding: 8px;
-  width: 50%;
+  width: 75%;
 }
 
 #postedComments {
@@ -342,16 +348,30 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  margin: 16px 0;
-  padding: 0 16px;
+  margin: 0;
+  padding: 0;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: justify;
   width: 100%;
 }
 #postedComments .name {
-  margin: 0;
+  margin: 8px 0;
   display: inline-block;
+}
+
+.commentBoxInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .blankPic {
@@ -359,6 +379,7 @@ label {
   height: 30px;
   width: 30px;
   border-radius: 50%;
+  margin-right: 16px;
   display: inline-block;
 }
 
@@ -372,7 +393,11 @@ label {
           flex-flow: row wrap;
   font-size: 14px;
   font-weight: 400;
-  width: 75%;
+  width: 80%;
+}
+
+.comment {
+  width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -556,6 +581,32 @@ label {
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
+  .commentSection {
+    margin-left: 36px;
+  }
+  .commentSection h2 {
+    font-size: 36px;
+  }
+
+  .button__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .button__container #submitButton {
+    width: 25%;
+  }
+
+  #postedComments {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
   .footer__section {
     display: none;
   }
@@ -586,7 +637,7 @@ label {
   .alt__footer__title {
     width: 250px;
     display: inline;
-    padding-left: 112px;
+    padding-left: 32px;
     font-weight: 600;
     font-size: 36px;
   }
@@ -603,17 +654,17 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
-    padding-left: 72px;
+    padding-left: 32px;
   }
   .alt__footer__text__container .divider {
     width: 25%;
   }
   .alt__footer__end__container {
-    padding-left: 160px;
+    padding-left: 32px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -826,6 +877,29 @@ label {
     line-height: 32px;
     font-weight: 400;
     padding-right: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .commentSection {
+    margin-left: 96px;
+  }
+
+  .commentSectionHead {
+    font-size: 36px;
+  }
+
+  .button__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .button__container #submitButton {
+    width: 25%;
   }
 }
 @media (min-width: 1280px) {

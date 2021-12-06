@@ -74,7 +74,7 @@
 </body>
 <!--Comment Section: I am using camel case because this is where JS is being applied-->
 <section class="commentSection">
-    <h2>Join The Conversation</h2>
+    <h2 class="commentSectionHead">Join The Conversation</h2>
     <div class="inputComment">
         <form id="userForm">
             <label id="nameLabel">NAME</label>
@@ -87,21 +87,33 @@
                 <textarea name="comment_submission" class="textInput" id="commentInput" type="text" placeholder="Leave a Comment">
             </textarea>
             </div>
-            <button type="submit" id="submitButton" onclick="document.getElementsByClassName('textInput').value = ''">COMMENT</button>
+            <div class="button__container">
+                <button type="submit" id="submitButton" onclick="document.getElementsByClassName('textInput').value = ''">COMMENT</button>
+            </div>
         </form>
     </div>
     <section id="postedComments">
         <div class="commentBox">
-            <div class="blankPic"></div>
-            <p class="name">Connor Walton</p>
+            <div class="commentBoxInfo">
+                <div>
+                    <div class="blankPic"></div>
+                    <p class="name">Connor Walton</p>
+                </div>
+                <p class="date">02/17/2021</p>
+            </div>
             <p class="comment">
                 This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.
             </p>
         </div>
         <hr>
         <div class="commentBox">
-            <div class="blankPic"></div>
-            <p class="name">Emilie Beach</p>
+            <div class="commentBoxInfo">
+                <div>
+                    <div class="blankPic"></div>
+                    <p class="name">Emilie Beach</p>
+                </div>
+                <p class="date">01/09/2021</p>
+            </div>
             <p class="comment">
                 I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.
             </p>

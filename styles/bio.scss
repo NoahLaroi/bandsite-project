@@ -90,14 +90,6 @@
                                 }
                             }
                             
-                            // .header__nav__link {
-                            // border-style: solid;
-                            // border-color: $white;
-                            // border-top: 0;
-                            // border-right: 0;
-                            // border-bottom: 10px;
-                            // border-left: 0;
-                            // }
                             #active {
                                 border-style: solid;
                                 border-color: $white;
@@ -250,7 +242,7 @@
                             .commentSection {
                                 margin-left: 16px;
                                 h2 {
-                                    margin-left: 16px;
+                                    margin-left: 0;
                                 }
                             }
                             
@@ -269,12 +261,12 @@
                                 width: 30px;
                                 border-radius: 50%;
                                 display: inline-block;
+                                margin-right: 16px;
                             }
                             
                             .commentHeadPair {
                                 display: flex;
                                 align-content: center;
-                                margin-left: 16px;
                             }
                             
                             #userform {
@@ -282,14 +274,16 @@
                             }
                             
                             #userInput {
-                                margin-left: 16px;
                                 padding: 8px;
+                                width: 67%;
                             }
                             
                             #commentInput {
-                                padding-bottom: 100px;
                                 border-radius: 5px;
-                                margin-left: 16px;
+                                width: 75%;
+                                height: 100px;
+                                margin-bottom: 16px;
+                                margin-left: 32px;
                             }
                             
                             label {
@@ -302,7 +296,11 @@
                             }
                             
                             #nameLabel {
-                                padding-left: 64px;
+                                padding-left: 48px;
+                            }
+                            
+                            #commentLabel {
+                                padding-left: 32px;
                             }
                             
                             .inputComment {
@@ -313,31 +311,38 @@
                             .commentBottomPair {
                                 display: flex;
                                 flex-direction: column;
-                                padding-left: 48px;
+                                padding-left: 16px;
                             }
                             
                             #submitButton {
-                                margin-left: 16px;
+                                margin-left: 48px;
                                 color: $white;
                                 background-color: $bandsite-black;
                                 border-radius: 5px;
                                 padding: 8px;
-                                width: 50%;
+                                width: 75%;
                             }
                             
                             //Posted Comments Section Styles
                             #postedComments {
                                 display: flex;
                                 flex-flow: column wrap;
-                                margin: 16px 0;
-                                padding: 0 16px;
+                                margin: 0;
+                                padding: 0;
                                 align-content: center;
                                 text-align: justify;
                                 width: 100%;
                                 .name {
-                                    margin: 0;
+                                    margin: 8px 0;
                                     display: inline-block;
                                 }
+                            }
+                            
+                            .commentBoxInfo {
+                                display: flex;
+                                flex-flow: row wrap;
+                                width: 100%;
+                                justify-content: space-between;
                             }
                             
                             .blankPic {
@@ -345,6 +350,7 @@
                                 height: 30px;
                                 width: 30px;
                                 border-radius: 50%;
+                                margin-right: 16px;
                                 display: inline-block;
                             }
                             
@@ -353,7 +359,11 @@
                                 flex-flow: row wrap;
                                 font-size: 14px;
                                 font-weight: 400;
-                                width: 75%;
+                                width: 80%;
+                            }
+                            
+                            .comment {
+                                width: 100%;
                             }
                             
                             //Tablet Styles
@@ -516,6 +526,29 @@
                                 }
                             }
                             
+                            //Tablet Comment Styles
+                            @media (min-width:$tablet-lower) and (max-width:$tablet-higher) {
+                                .commentSection {
+                                    margin-left: 36px;
+                                    h2 {
+                                        font-size: 36px
+                                    }
+                                    ;
+                                }
+                                .button__container {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    width: 60%;
+                                    margin: 0 auto;
+                                    #submitButton {
+                                        width: 25%;
+                                    }
+                                }
+                                #postedComments {
+                                    font-size: 14px;
+                                }
+                            }
+                            
                             //Tablet Footer Styles
                             @media (min-width: $tablet-lower) and (max-width: $tablet-higher) {
                                 .footer__section {
@@ -544,7 +577,7 @@
                                     &__title {
                                         width: 250px;
                                         display: inline;
-                                        padding-left: 112px;
+                                        padding-left: 32px;
                                         font-weight: 600;
                                         font-size: 36px;
                                     }
@@ -556,15 +589,15 @@
                                     &__text__container {
                                         display: flex;
                                         flex-flow: row wrap;
-                                        justify-content: space-evenly;
+                                        justify-content: space-between;
                                         width: 100%;
-                                        padding-left: 72px;
+                                        padding-left: 32px;
                                         .divider {
                                             width: 25%;
                                         }
                                     }
                                     &__end__container {
-                                        padding-left: 160px;
+                                        padding-left: 32px;
                                     }
                                 }
                             }
@@ -745,6 +778,25 @@
                                     line-height: 32px;
                                     font-weight: 400;
                                     padding-right: 16px;
+                                }
+                            }
+                            
+                            //Desktop Lower Comment Styles 
+                            @media (min-width: $desktop-lower) {
+                                .commentSection {
+                                    margin-left: 96px;
+                                }
+                                .commentSectionHead {
+                                    font-size: 36px;
+                                }
+                                .button__container {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    width: 60%;
+                                    margin: 0 auto;
+                                    #submitButton {
+                                        width: 25%;
+                                    }
                                 }
                             }
                             
