@@ -10,6 +10,12 @@ body {
   color: #323232;
 }
 
+footer,
+.commentSection {
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -331,6 +337,10 @@ label {
   padding-left: 16px;
 }
 
+textarea {
+  font-family: Avenir Next;
+}
+
 #submitButton {
   margin-left: 48px;
   color: #ffffff;
@@ -355,9 +365,56 @@ label {
   text-align: justify;
   width: 100%;
 }
-#postedComments .name {
+
+.nameAndPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
   margin: 8px 0;
+  height: 100%;
+}
+
+.profileImg {
+  height: 30px;
+  width: 30px;
+  background-color: silver;
+  border-radius: 50%;
   display: inline-block;
+  margin: 8px 8px 8px 0;
+}
+
+.topContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.name {
+  margin: 0;
+  display: inline-block;
+  width: 90px;
+}
+
+.date {
+  margin: 0;
 }
 
 .commentBoxInfo {

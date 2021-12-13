@@ -26,6 +26,12 @@
                                 color: $bandsite-black;
                             }
                             
+                            footer,
+                            .commentSection {
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
                             h1,
                             h2,
                             h3 {
@@ -314,6 +320,10 @@
                                 padding-left: 16px;
                             }
                             
+                            textarea {
+                                font-family: Avenir Next;
+                            }
+                            
                             #submitButton {
                                 margin-left: 48px;
                                 color: $white;
@@ -332,10 +342,42 @@
                                 align-content: center;
                                 text-align: justify;
                                 width: 100%;
-                                .name {
-                                    margin: 8px 0;
-                                    display: inline-block;
-                                }
+                            }
+                            
+                            .nameAndPic {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 40%;
+                                margin: 8px 0;
+                                height: 100%
+                            }
+                            
+                            .profileImg {
+                                height: 30px;
+                                width: 30px;
+                                background-color: silver;
+                                border-radius: 50%;
+                                display: inline-block;
+                                margin: 8px 8px 8px 0;
+                            }
+                            
+                            .topContainer {
+                                width: 100%;
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                            
+                            .name {
+                                margin: 0;
+                                display: inline-block;
+                                width: 90px;
+                            }
+                            
+                            .date {
+                                margin: 0;
                             }
                             
                             .commentBoxInfo {
