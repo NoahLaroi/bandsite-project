@@ -68,7 +68,6 @@ h3 {
 .mainShow p {
     color: $bandsite-black;
     size: 13px;
-    font-weight: 400;
 }
 
 .mainShowButton {
@@ -111,6 +110,14 @@ p {
 .shows .location {
     color: $silver;
     font-size: 10px;
+}
+
+.show__date {
+    font-weight: 600;
+}
+
+.altPDate {
+    font-weight: 600;
 }
 
 hr {

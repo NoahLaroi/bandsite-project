@@ -422,8 +422,11 @@
                                 }
                                 
                                 .commentBox {
-                                    width: 75%;
-                                    margin-left: 48px;
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    width: 100%;
                                 }
                                 
                                 .comment {

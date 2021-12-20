@@ -33,7 +33,7 @@ window.onload = () => {
 
             let pDate = document.createElement("p")
             let humanReadableDate = new Date(Number(showsArray[i].date)).toDateString()
-            pDate.classList.add("show__info")
+            pDate.classList.add("show__date")
             pDate.innerHTML = humanReadableDate;
 
             let venueTitle = document.createElement('h3');
