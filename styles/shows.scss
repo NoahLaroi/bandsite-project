@@ -81,6 +81,14 @@ h3 {
     border-radius: 5px;
 }
 
+.mainShowButton:hover {
+    background-color: $bandsite-darkblack;
+}
+
+.altMainShowButton:hover {
+    background-color: $bandsite-darkblack;
+}
+
 .altMainShow {
     display: none;
 }
@@ -122,10 +130,6 @@ hr {
     background-color: $mercury;
 }
 
-//Practice with Bruna
-// @mixin bigScreenStyles {
-//     background-color: green;
-// }
 //HeaderStyles
 .header {
     background-color: $bandsite-black;
@@ -330,7 +334,7 @@ hr {
         justify-content: flex-start;
         align-items: center;
         flex-flow: row wrap;
-        height: 15%;
+        height: 75px;
     }
     .header__title__box {
         padding-left: 16px;
@@ -359,7 +363,7 @@ hr {
 //Tablet Hero Styles 
 @media (min-width:$tablet-lower) and (max-width: $tablet-higher) {
     .hero {
-        height: 50vh;
+        height: 500px;
     }
     .hero__presentation {
         padding-left: 32px;
@@ -375,7 +379,7 @@ hr {
     }
     .hero__overlay {
         position: relative;
-        bottom: 70%;
+        bottom: 86%;
     }
 }
 
@@ -563,7 +567,7 @@ hr {
 //Desktop Hero
 @media (min-width: $desktop-lower) {
     .hero {
-        height: 50vh;
+        height: 600px;
         .hero__presentation__container {
             display: flex;
             flex-flow: row wrap;
@@ -596,7 +600,7 @@ hr {
         }
         .hero__overlay {
             position: relative;
-            bottom: 49%;
+            bottom: 50%;
         }
     }
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/bio.css">
     <script src="scripts/index-page.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>BandSite</title>
 </head>
 
@@ -18,10 +19,10 @@
             </a>
         </div>
         <nav class="header__nav">
-            <a href="index.html" class="header__nav_link">
+            <a href="index.html" class="header__nav__link">
                 <h3 class="header__nav__txt" id="active">Biography</h3>
             </a>
-            <a href="./pages/shows.html" class="header__nav_link">
+            <a href="./pages/shows.html" class="header__nav__link">
                 <h3 class="header__nav__txt" id="inactive">Shows</h3>
             </a>
         </nav>
@@ -90,42 +91,11 @@
             <div class="button__container">
                 <button type="submit" id="submitButton" onclick="document.getElementsByClassName('textInput').value = ''">COMMENT</button>
             </div>
+            <hr>
         </form>
     </div>
     <section id="postedComments">
-        <!-- <div class="commentBox">
-            <div class="commentBoxInfo">
-                <div>
-                    <div class="blankPic"></div>
-                    <p class="name">Connor Walton</p>
-                </div>
-                <p class="date">02/17/2021</p>
-            </div>
-            <p class="comment">
-                This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.
-            </p>
-        </div>
-        <hr>
-        <div class="commentBox">
-            <div class="commentBoxInfo">
-                <div>
-                    <div class="blankPic"></div>
-                    <p class="name">Emilie Beach</p>
-                </div>
-                <p class="date">01/09/2021</p>
-            </div>
-            <p class="comment">
-                I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.
-            </p>
-        </div>
-        <hr>
-        <div class="commentBox">
-            <div class="blankPic"></div>
-            <p class="name">Miles Acosta</p>
-            <p class="comment">
-                I can't stop listening. Every time I hear one of their songs the vocals it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can t get enough.
-            </p>
-        </div> -->
+
     </section>
 </section>
 <!--Footer Section-->

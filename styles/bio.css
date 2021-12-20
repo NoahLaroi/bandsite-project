@@ -32,17 +32,6 @@ p {
   display: none;
 }
 
-.header {
-  background-color: #323232;
-  color: #ffffff;
-  margin: 0;
-  height: 15%;
-}
-.header a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 hr {
   border: 0;
   clear: both;
@@ -50,6 +39,17 @@ hr {
   width: 96%;
   background-color: #afafaf;
   height: 1px;
+}
+
+.header {
+  background-color: #323232;
+  color: #ffffff;
+  margin: 0;
+  height: 70px;
+}
+.header a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .header__title__box {
@@ -81,8 +81,13 @@ hr {
   font-weight: 300;
   margin-top: 0;
   padding-top: 0;
+  padding-bottom: 0;
   font-size: 13px;
   width: 50vw;
+}
+
+#submitButton:hover {
+  background-color: #000000;
 }
 
 #active {
@@ -173,6 +178,7 @@ hr {
 
 .photo__gallery {
   padding: 0 16px;
+  background-color: #fafafa;
 }
 .photo__gallery__picture__container {
   display: -webkit-box;
@@ -248,7 +254,7 @@ hr {
 }
 
 .commentSection {
-  margin-left: 16px;
+  margin: 16px;
 }
 .commentSection h2 {
   margin-left: 0;
@@ -272,6 +278,17 @@ hr {
   margin-right: 16px;
 }
 
+.newProfilePic {
+  background-image: url(../assets/images/Mohan-muruge.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 16px;
+}
+
 .commentHeadPair {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,23 +297,21 @@ hr {
       align-content: center;
 }
 
-#userform {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #userInput {
   padding: 8px;
-  width: 67%;
+  width: 81.5%;
+}
+
+#userForm {
+  width: 100%;
+  margin: 0;
 }
 
 #commentInput {
   border-radius: 5px;
-  width: 75%;
+  width: 100%;
   height: 100px;
   margin-bottom: 16px;
-  margin-left: 32px;
 }
 
 label {
@@ -309,11 +324,11 @@ label {
 }
 
 #nameLabel {
-  padding-left: 48px;
+  padding-left: 40px;
 }
 
 #commentLabel {
-  padding-left: 32px;
+  padding: 0;
 }
 
 .inputComment {
@@ -334,15 +349,26 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 16px;
+  margin-left: 40px;
+  margin-right: 0;
+  width: 85%;
 }
 
 textarea {
   font-family: Avenir Next;
 }
 
+.button__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+}
+
 #submitButton {
-  margin-left: 48px;
   color: #ffffff;
   background-color: #323232;
   border-radius: 5px;
@@ -360,8 +386,8 @@ textarea {
           flex-flow: column wrap;
   margin: 0;
   padding: 0;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   text-align: justify;
   width: 100%;
 }
@@ -376,7 +402,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
+  width: 136px;
   margin: 8px 0;
   height: 100%;
 }
@@ -441,23 +467,16 @@ textarea {
 }
 
 .commentBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  font-size: 14px;
-  font-weight: 400;
-  width: 80%;
+  width: 75%;
+  margin-left: 48px;
 }
 
 .comment {
-  width: 100%;
+  width: 75%;
+  margin-left: 48px;
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -472,7 +491,7 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    height: 15%;
+    height: 75px;
   }
 
   .header__title__box {
@@ -502,7 +521,7 @@ textarea {
     padding: 16px 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .hero {
     height: 500px;
     -webkit-box-align: center;
@@ -526,7 +545,7 @@ textarea {
     bottom: 56.5%;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .text__sub {
     font-size: 36px;
     line-height: 44px;
@@ -534,14 +553,14 @@ textarea {
     padding: 32px 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .main__text__sub {
     font-size: 24px;
     font-weight: 600;
     padding-left: 36px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .body__section {
     padding: 24px;
     display: -webkit-box;
@@ -564,7 +583,7 @@ textarea {
     padding: 36px 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .text__sub {
     font-size: 36px;
     font-weight: 600;
@@ -572,7 +591,7 @@ textarea {
     width: 100%;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .quote {
     font-size: 24x;
     font-weight: 700;
@@ -580,13 +599,13 @@ textarea {
     margin-top: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .quote--author {
     margin-top: 0;
     padding: 0 36px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .main__text__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -598,7 +617,7 @@ textarea {
     padding: 0 36px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .paragraph__container--top,
 .paragraph__container--bottom {
     font-size: 14px;
@@ -607,12 +626,12 @@ textarea {
     padding-right: 16px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .photo__gallery {
     padding: 36px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .photo__gallery__picture__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -630,19 +649,44 @@ textarea {
     padding: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .photo__gallery__picture {
     height: 150px;
     width: 250px;
     margin: 16px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .commentSection {
-    margin-left: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .commentSection .inputComment {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .commentSection h2 {
     font-size: 36px;
+    margin-left: 36px;
+    font-weight: 600;
   }
 
   .button__container {
@@ -652,23 +696,57 @@ textarea {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
   .button__container #submitButton {
     width: 25%;
   }
 
+  #userForm {
+    width: 60%;
+  }
+
+  #userForm {
+    width: 60%;
+  }
+
+  #userInput {
+    width: 100%;
+  }
+
+  .commentBottomPair {
+    width: 94%;
+  }
+
   #postedComments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     font-size: 14px;
   }
+  #postedComments .commentBox {
+    width: 60%;
+  }
+  #postedComments .nameAndPic {
+    width: 136px;
+  }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .footer__section {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .alt__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -718,13 +796,13 @@ textarea {
     padding-left: 32px;
   }
   .alt__footer__text__container .divider {
-    width: 25%;
+    width: 33%;
   }
   .alt__footer__end__container {
     padding-left: 32px;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .alt__footer__top__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -738,7 +816,7 @@ textarea {
     width: 75%;
   }
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .alt__logo__container {
     width: 25%;
     display: -webkit-box;
@@ -764,7 +842,7 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    height: 15%;
+    height: 95px;
   }
 
   .header__title__box {
@@ -938,11 +1016,35 @@ textarea {
 }
 @media (min-width: 1280px) {
   .commentSection {
-    margin-left: 96px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
-
-  .commentSectionHead {
+  .commentSection .inputComment {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .commentSection h2 {
     font-size: 36px;
+    margin-left: 80px;
+    font-weight: 600;
   }
 
   .button__container {
@@ -952,11 +1054,45 @@ textarea {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
   .button__container #submitButton {
     width: 25%;
+  }
+
+  #userForm {
+    width: 60%;
+  }
+
+  #userInput {
+    width: 100%;
+  }
+
+  .commentBottomPair {
+    width: 94%;
+  }
+
+  #postedComments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-size: 14px;
+  }
+  #postedComments .commentBox {
+    width: 60%;
+  }
+  #postedComments .nameAndPic {
+    width: 136px;
   }
 }
 @media (min-width: 1280px) {
@@ -1032,6 +1168,10 @@ textarea {
   }
   .alt__footer__top__container .top__divider {
     width: 50%;
+  }
+
+  .alt__footer__end__container {
+    padding-left: 104px;
   }
 }
 @media (min-width: 1280px) {
